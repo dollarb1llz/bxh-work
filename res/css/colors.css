@@ -1,0 +1,46 @@
+/*Background Colors*/
+.green {
+  background-color: hsla(135, 36%, 18%, 0.85);
+}
+.yellow {
+  background-color: hsl(54, 78%, 51%);
+}
+.orange {
+  background-color: hsla(41, 83%, 30%, 0.75);
+}
+.blue {
+  background-color: hsla(203, 85%, 29%, 0.75);
+}
+.purple {
+  background-color: hsla(259, 90%, 20%, 0.85);
+}
+.pink {
+  background-color: hsla(288, 82%, 29%, 0.78);
+}
+.red {
+  background-color: hsla(355, 85%, 29%, 0.85);
+}
+.pitch-dark {
+  background-color: hsla(0, 0%, 0%, 0.88);
+}
+.white {
+  background-color: hsla(0, 0%, 67%, 0.7);
+}
+
+
+/*Text Colors*/
+.green-color {
+  color: hsl(153, 69%, 48%);
+}
+.red-color {
+  color: hsl(344, 79%, 47%);
+}
+.orange-color {
+  color: hsla(28, 87%, 40%, 1);
+}
+.purple-color {
+  color: hsla(259, 100%, 50%, 1);
+}
+.black-color {
+  color: hsla(0, 0%, 0%, 0.92);
+}
