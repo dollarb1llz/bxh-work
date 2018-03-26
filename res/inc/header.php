@@ -25,7 +25,8 @@
         <li><a href="./today.php">Today</a></li>
         <li><a href="./plan.php">Tomorrow</a></li>
         <li id="checklist">
-          <a href="./checklist.php">Checklist</a>
+          <a href="./checklist.php">Checklist
+          <span><i class="fa fa-caret-down"></i></span> </a>
             <ul>
               <li><a href="./food.php">Food</a></li>
               <li><a href="./support.php">Support</a></li>
