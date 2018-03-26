@@ -6,7 +6,7 @@
     <h1>Saturday March 24th</h1>
     <h2>Wingin it</h2>
   </div>
-  <div class="container bg">
+  <div class="container">
     <div class="c"></div>
   </div>
 </div>

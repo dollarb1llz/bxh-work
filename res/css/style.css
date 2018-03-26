@@ -23,17 +23,6 @@ body {
 .flex {
   display: flex;
 }
-.container {
-  width: 970px;
-  margin: 0 auto;
-  position: relative;
-}
-@media only screen and (max-width: 1050px) {
-  .container {
-    width: 99%;
-    position: relative;
-  }
-}
 .test {
   border: 1px solid red;
 }
@@ -68,6 +57,43 @@ body {
 .flexca {
   display: flex;
   align-items: center;
+}
+
+
+
+/*Container*/
+.container {
+  width: 980px;
+  margin: 2rem auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10rem auto;
+  padding: 2rem;
+}
+.container img, .container video {
+  max-height: 100%;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+.container i {
+  opacity: .8;
+}
+.nav-bg-text {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  opacity: .8;
+}
+@media only screen and (max-width: 1050px) {
+  .container {
+    width: 100%;
+    position: relative;
+    padding: 0;
+  }
 }
 
 
@@ -179,35 +205,55 @@ nav li a:hover {
 
 
 
+/*Button*/
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+  /*Button Themes*/
+.btn.default {
+  background-color: hsla(0, 0%, 0%, 1);
+  transition: background-color 100ms ease, color 100ms ease;
+  opacity: .7;
+}
+.btn.default:hover {
+  background-color: hsla(0, 0%, 0%, 0.7);
+}
+  /*Button Sizes*/
+.btn.sm {
+  width: 150px;
+}
+.btn.md{
+  width: 300px;
+}
+.btn.lg {
+  width: 500px;
+}
+
+
+
+/*A href*/
+a.btn {
+  color: white;
+}
+a.btn:hover {
+  color: hsl(205, 63%, 47%);
+}
+
+
 
 /*Supporting*/
 p {
-  line-height: 2.5;
-  text-indent: 1rem;
-  margin: 1rem;
+  line-height: 3;
+  margin: 1rem auto;
   opacity: 1;
-}
-p span:nth-child(1) {
-  color: white;
-  font-weight: bold;
-  font-size: 1.3rem;
-  margin-left: .5rem;
-}
-p span:nth-child(4), p span:nth-child(6){
-  color: hsla(0, 0%, 100%, 0.7);
-  font-size: .9rem;
-  opacity: 1;
-  margin-left: .5rem;
-}
-p span:nth-child(5) {
-  font-size: 1rem;
-  color: hsla(0, 0%, 44%, 0.8);
-  margin-left: .5rem;
-  font-style: italic;
-}
-p span:nth-child(8) {
-  font-size: 1.2rem;
-  margin-left: .5rem;
+  width: 60%;
+  text-indent: 2rem;
+  opacity: .8;
 }
 
 p span a:nth-child(odd) {
@@ -232,13 +278,6 @@ p span a:hover {
 }
 i {
   margin: 1rem;
-}
-.container img, .container video {
-  width: 40%;
-  shape-outside: ellipse();
-  margin: 1rem;
-  border-radius: 2rem;
-  box-shadow: 1rem 1rem 2rem hsla(0, 0%, 0%, 0.6);
 }
 .bg {
   background-color: hsla(0, 0%, 0%, 0.13);
@@ -284,7 +323,8 @@ i {
     float: none;
   }
   p {
-    margin: 0 1%;
+    width: 90% auto;
+
   }
 }
 
